@@ -9,3 +9,4 @@ RUN apk update &&\
 COPY conf/squid.conf /etc/squid/squid.conf
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 CMD [ "squid" ]
+EXPOSE 3128 3130
